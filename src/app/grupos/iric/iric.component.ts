@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IAlumnosIric } from '../alumnos-iric';
 
 @Component({
   selector: 'app-iric',
@@ -7,8 +8,15 @@ import { Component } from '@angular/core';
 })
 export class IricComponent {
 
+  imageWidth:number=120;
+  imageMargin: number=5;
+  muestraImg:boolean=true;
+  listFilter:string=''
+  showImage():void{
+    this.muestraImg=!this.muestraImg;
+  }
 
-  alumnosIric: any[] = [
+  alumnosIric: IAlumnosIric[] = [
     {
       matricula: 18002424,
       nombre: 'Roberto Ortiz',
