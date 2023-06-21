@@ -16,6 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { OperasModule } from './grupos/formularios/operas/operas.module';
+
 
 @NgModule({
   declarations: [
@@ -25,17 +27,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     IricComponent,
     MenuComponent,
     SumaComponent,
-    OperasBasComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    MatRadioModule,
-    MatFormFieldModule
+    OperasModule
     
 
   ],
