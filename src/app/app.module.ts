@@ -17,6 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { OperasModule } from './grupos/formularios/operas/operas.module';
+import { AlumnoFilterPipe } from './grupos/alumno-filter.pipe';
+import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificacion-alum.component';
 
 
 @NgModule({
@@ -28,14 +30,14 @@ import { OperasModule } from './grupos/formularios/operas/operas.module';
     MenuComponent,
     SumaComponent,
     MenuComponent,
+    AlumnoFilterPipe,
+    CalificacionAlumComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     OperasModule
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]
