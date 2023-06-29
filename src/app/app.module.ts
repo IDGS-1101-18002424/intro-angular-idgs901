@@ -6,7 +6,7 @@ import { utlComponent } from './utl/utl.component';
 import { ievnComponent } from './ievn/ievn.component';
 import { IricComponent } from './grupos/iric/iric.component';
 import { MenuComponent } from './grupos/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumaComponent } from './grupos/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasBasComponent } from './grupos/formularios/operas-bas/operas-bas.component';
@@ -19,6 +19,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { OperasModule } from './grupos/formularios/operas/operas.module';
 import { AlumnoFilterPipe } from './grupos/alumno-filter.pipe';
 import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificacion-alum.component';
+import { AlumnosReactiveComponent } from './formularios/alumnos-reactive/alumnos-reactive.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app.routing module';
 
 
 @NgModule({
@@ -32,12 +35,16 @@ import { CalificacionAlumComponent } from './grupos/calificacion-alum/calificaci
     MenuComponent,
     AlumnoFilterPipe,
     CalificacionAlumComponent,
+    AlumnosReactiveComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    OperasModule
+    OperasModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
